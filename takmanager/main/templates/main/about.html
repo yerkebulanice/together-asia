@@ -1,0 +1,40 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+About us page
+{% endblock %}
+
+{% block content %}
+<h1>Описание API</h1>
+<p>Together Asia API работает поверх HTTP-протокола. Мы используем REST архитектуру, схема описывается в соответствии с OpenAPI. Коды возврата описываются
+    соответствующими HTTP-статусами. Платформа принимает и возвращает JSON-структуры в HTTP body.</p>
+<hr>
+<p style="font-weight: w300;">
+    Любой запрос к API должен выполняться в кодировке UTF-8 и с указанием содержимого в формате JSON.</p>
+<p style="background-color: black; color: white;"> Content-Type: application/json; charset=utf-8</p>
+<hr>
+
+<h1>Аутентификация</h1>
+<p style="background-color: black; color: white;">
+    POST /v2/signup HTTP/1.1 <br>
+    Host: api.together.asia <br>
+    API-KEY: eyJ0eXAi... <br>
+    Content-Type: application/json <br>
+    
+    {<br>
+       "username":"admin",<br>
+       "password":"admin"<br>
+    } <br>
+</p>
+
+<hr>
+<h1>Получение списка адресов Кризисных Центров</h1>
+<p style="background-color: black; color: white;">
+    GET /v2/nko/list HTTP/1.1 <br>
+    Host: api.together.asia <br>
+    API-KEY: eyJ0eXAi... <br>
+    Content-Type: application/json <br>
+</p>
+<img src="../main/logo/screen.png" alt="">
+<hr>
+{% endblock %}

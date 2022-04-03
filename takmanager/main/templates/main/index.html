@@ -1,0 +1,64 @@
+{% extends 'main/base.html' %} {% block title %} {{ title }} {% endblock %} {% block content %}
+<!-- {% if tasks %}
+{% for el in tasks %}
+<div class="alert alert-warning mt-2">
+    <h3>{{ el.title }}</h3>
+    <p>{{ el.task }}</p>
+</div>
+{% endfor %}
+{% else %}
+<p>No tasks</p>
+{% endif %} -->
+<h1>Документация Together Asia API</h1>
+<br>
+<p>Для интеграции с супераппами здесь собраны руководства и примеры.</p>
+<p>Вся информация о структуре запросов, объектах и переменных для разработчиков есть в справочникеAPI.</p>
+<hr>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img"
+                        aria-label="Placeholder: Виджеты" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Виджеты</text>
+                    </svg>
+
+                    <div class="card-body">
+                        <p class="card-text">Самый простой способ добавить виджета сообщений на свой продукт.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='/about'">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img"
+                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Работа с API</text>
+                    </svg>
+                    <div class="card-body">
+                        <p class="card-text">Вся информация о структуре запросов, объектах и переменных.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='/about'">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
